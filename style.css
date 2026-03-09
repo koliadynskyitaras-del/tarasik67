@@ -1,0 +1,116 @@
+/* Основні налаштування */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf5e6; /* Ніжний кремовий колір */
+    color: #4a3728; /* Темно-шоколадний для тексту */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Заголовок */
+h1 {
+    color: #8b4513;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #d2b48c;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Головний блок з фото та описом */
+.main-block {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 800px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main-block img {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.main-block img:hover {
+    transform: scale(1.05); /* Ефект збільшення при наведенні */
+}
+
+/* Цікаві факти */
+.facts {
+    background: #fff9f0;
+    border-left: 5px solid #d2b48c;
+    padding: 15px 30px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 0 15px 15px 0;
+}
+
+.facts h2 {
+    color: #a0522d;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+/* Таблиця характеристик */
+.characteristics {
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden; /* Щоб закруглити кути таблиці */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #d2b48c;
+    color: white;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #fff4e6;
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Адаптивність для мобілок */
+@media (max-width: 600px) {
+    .main-block {
+        flex-direction: column;
+    }
+    .main-block img {
+        width: 100%;
+    }
+}
